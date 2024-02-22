@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const ServiceCard = ({ item,index}) =>{
 
-    const {name, desc, bgcolor,textcolor} = item
+    const {name, desc, bgColor,textColor} = item;
     return( 
     <div className="py-[30px] px-3 lg:px-5">
         <h2 className="text-[26px] leading-9 text-headingColor font-[700]">
@@ -23,8 +23,8 @@ const ServiceCard = ({ item,index}) =>{
         </Link> 
         <span className="w-[44px] h-[44px] flex items-center justify-center text-[18px] leading-[30px] font-[600]" 
         style={{
-            background: `${bgcolor}`,
-            color: `${textcolor}`, 
+            background: `${bgColor}`,
+            color: `${textColor}`, 
             borderRadius:'6px 0 0 6px'
             }}
         >
