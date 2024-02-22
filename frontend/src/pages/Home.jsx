@@ -156,9 +156,11 @@ const Home = () => {
     </div>
   </section>
 
+{/* ------------ About section starts -------------- */}
 <About />
 {/* ------------ About section ends -------------- */}
-{/*------------- Service section starts-----------*/}
+
+{/*------------- Services section starts-----------*/}
    <section>
     <div className="container">
       <div className='xl:w-[470px] mx-auto'>
@@ -171,7 +173,7 @@ const Home = () => {
       <ServiceList/>
     </div>
    </section>
-{/*------------- Service section ends-----------*/}
+{/*------------- Services section ends-----------*/}
   </>
   );
 };
