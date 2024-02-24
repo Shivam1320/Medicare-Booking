@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom';
 import { BsArrowRight } from 'react-icons/bs';
 import About from '../components/About/About';
 import ServiceList from '../components/Services/ServiceList';
+import DoctorList from '../components/Doctors/DoctorList';
 
 const Home = () => { 
   return (
@@ -249,6 +250,7 @@ const Home = () => {
           expert health care.
         </p>
     </div>
+    <DoctorList/>
   </div>
 </section>
 {/*-------------- our great doctors section ends----------------*/}
