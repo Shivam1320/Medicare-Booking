@@ -241,11 +241,7 @@ const Home = () => {
           expert health care.
         </p>
     </div>
-<<<<<<< HEAD
-    <DoctorList/>
-=======
     <DoctorList />
->>>>>>> ec98aeb3b08fb310d91d687fe06f8493f8fb98f3
   </div>
 </section>
 {/*-------------- our great doctors section ends----------------*/}

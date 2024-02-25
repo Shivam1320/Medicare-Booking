@@ -75,13 +75,13 @@ const quickLinks03 = [
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className='pb-16 pt-10 bg-gray-200'>
+    <footer className='pb-16 pt-10'>
       <div className="container">
       <div className='flex justify-between flex-col md:flex-row flex-wrap gap-[30px]'>
         <div>
           <img src={logo} alt="" />
           <p className='text-[16px] leading-7 font-[400] text-textColor mt-4'>
-            Copyright ©️ {year} developed in team by Shivam Kumar & Khyati Jain all right reserved.
+            Copyright ©️ {year} developed in team by Shivam Kumar & Khyati Jain all rights reserved.
           </p>
 
           <div className='flex items-center gap-3 mt-4'>
