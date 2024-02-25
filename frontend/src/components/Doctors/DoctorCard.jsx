@@ -1,11 +1,12 @@
-import React from 'react'
 import startIcon from '../../assets/images/Star.png';
 import { Link } from 'react-router-dom';
 import { BsArrowRight } from 'react-icons/bs';
 
 const DoctorCard = ({doctor}) =>{
 
+
     const {name, avgRating, totalRating, photo, specialization, totalPatients, hospital} =doctor
+
     return (
         <div className='p-3 lg:p-5'> 
             <div>
@@ -26,8 +27,8 @@ const DoctorCard = ({doctor}) =>{
                 font-semibold text-headingColor'>
                     <img src={startIcon} alt="" />{avgRating}
                 </span>
-                <span className=' text-[14px] leading-6 lg:text-[16px] lg:leading-7 font-[400] text-textColor'>
-                    {totalRating}
+                <span className='flex items-center gap-[6px] text-[14px] leading-6 lg:text-[16px] lg:leading-7 font-[400] text-textColor'>
+                    ({totalRating})
                 </span>
             </div>
         </div>
