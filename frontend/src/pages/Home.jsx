@@ -212,7 +212,7 @@ const Home = () => {
           <div className="flex items-center gap-[6px] lg:gap-3">
             <p className='text-[10px] leading-[10px] lg:text-[14px] lg:leading-5 text-headingColor font-[600]'>Tue, 24</p>
 
-            <p className='text-[10px] leading-[10px] lg:text-[14px] lg:leading-5 text-textColor font-[400]'>10:00</p>
+            <p className='text-[10px] leading-[10px] lg:text-[14px] lg:leading-5 text-textColor font-[400]'>10:00 AM</p>
           </div>
           <span className='w-5 h-5 lg:w-[34px] lg:h-[34px] flex items-center justify-center bg-yellowColor rounded py-1 px-[6px] lg:py-3 lg:px-[9px]'>
             <img src={videoIcon} alt="" />
@@ -251,6 +251,7 @@ const Home = () => {
 </section>
 {/*-------------- our great doctors section ends----------------*/}
 
+
 {/*------------------------ faq section ----------------*/}
 <section>
   <div className='container'>
@@ -271,7 +272,8 @@ const Home = () => {
 </section>
 {/*------------------ faq section ends------------*/}
 
-{/*---------------testimonial---------*/}
+
+{/*---------------testimonial section ---------*/}
 <section>
   <div className="container">
   <div className='xl:w-[470px] mx-auto'>

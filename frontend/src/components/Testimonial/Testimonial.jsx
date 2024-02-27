@@ -1,6 +1,4 @@
-
-import React from "react";
-import {Pagination} from 'swiper'
+import {Pagination} from 'swiper/modules'
 import {Swiper , SwiperSlide} from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -11,8 +9,13 @@ import {HiStar} from 'react-icons/hi';
 const Testimonial = () => {
     return (
         <div className="mt-[30px] lg:mt-[55px]">
-            <Swiper modules={[Pagination]} spaceBetween={30} slidesPerView={1} pagination={{clickable:true}}
-            breakpoints={{
+            <Swiper 
+                modules={[Pagination]} 
+                spaceBetween={30} 
+                slidesPerView={1} 
+                loop={true}
+                pagination={{clickable:true}}
+                breakpoints={{
                 640: {
                     slidesPerView: 1,
                     spaceBetween: 0,
@@ -25,15 +28,16 @@ const Testimonial = () => {
                     slidesPerView: 3,
                     spaceBetween: 30,
                 },
-            }}
-            >
+            }}>
+
+                {/*------------------- Review 1 ------------ */}
                 <SwiperSlide>
                     <div className="py-[30px] px-5 rounded-3">
                         <div className="flex items-center gap-[13px]">
                             <img src={patientAvatar} alt="" />
                             <div> 
                                 <h4 className="text-[18px] leading-[30px] font-semibold text-headingColor"> 
-                                Muhibur Rahman 
+                                Shivam Kumar
                                 </h4>
                                  <div className="flex items-center gap-[2px]">
                                     <HiStar className="text-yellowColor w-[18px] h-5"/>
@@ -45,11 +49,112 @@ const Testimonial = () => {
                             </div>
                         </div>
                         <p className="text-[16px] leading-7 mt-4 text-textColor font-[400]">
-                            " I have taken medical services from them. They treat so well and they 
+                            "I have taken medical services from them. They treat so well and they 
                             are providing the best medical services."
                         </p>
                     </div>
                 </SwiperSlide> 
+
+                {/*------------------- Review 2 ------------ */}
+                <SwiperSlide>
+                    <div className="py-[30px] px-5 rounded-3">
+                        <div className="flex items-center gap-[13px]">
+                            <img src={patientAvatar} alt="" />
+                            <div> 
+                                <h4 className="text-[18px] leading-[30px] font-semibold text-headingColor"> 
+                                Khyati Jain
+                                </h4>
+                                 <div className="flex items-center gap-[2px]">
+                                    <HiStar className="text-yellowColor w-[18px] h-5"/>
+                                    <HiStar className="text-yellowColor w-[18px] h-5"/>
+                                    <HiStar className="text-yellowColor w-[18px] h-5"/>
+                                    <HiStar className="text-yellowColor w-[18px] h-5"/>
+                                    <HiStar className="text-yellowColor w-[18px] h-5"/>
+                                </div> 
+                            </div>
+                        </div>
+                        <p className="text-[16px] leading-7 mt-4 text-textColor font-[400]">
+                            "I have taken medical services from them. They treat so well and they 
+                            are providing the best medical services."
+                        </p>
+                    </div>
+                </SwiperSlide> 
+
+                {/*------------------- Review 3 ------------ */}
+                <SwiperSlide>
+                    <div className="py-[30px] px-5 rounded-3">
+                        <div className="flex items-center gap-[13px]">
+                            <img src={patientAvatar} alt="" />
+                            <div> 
+                                <h4 className="text-[18px] leading-[30px] font-semibold text-headingColor"> 
+                                John Cena
+                                </h4>
+                                 <div className="flex items-center gap-[2px]">
+                                    <HiStar className="text-yellowColor w-[18px] h-5"/>
+                                    <HiStar className="text-yellowColor w-[18px] h-5"/>
+                                    <HiStar className="text-yellowColor w-[18px] h-5"/>
+                                    <HiStar className="text-yellowColor w-[18px] h-5"/>
+                                    <HiStar className="text-yellowColor w-[18px] h-5"/>
+                                </div> 
+                            </div>
+                        </div>
+                        <p className="text-[16px] leading-7 mt-4 text-textColor font-[400]">
+                            "I have taken medical services from them. They treat so well and they 
+                            are providing the best medical services."
+                        </p>
+                    </div>
+                </SwiperSlide> 
+
+                {/*------------------- Review 4 ------------ */}
+                <SwiperSlide>
+                    <div className="py-[30px] px-5 rounded-3">
+                        <div className="flex items-center gap-[13px]">
+                            <img src={patientAvatar} alt="" />
+                            <div> 
+                                <h4 className="text-[18px] leading-[30px] font-semibold text-headingColor"> 
+                                Brock Lesner
+                                </h4>
+                                 <div className="flex items-center gap-[2px]">
+                                    <HiStar className="text-yellowColor w-[18px] h-5"/>
+                                    <HiStar className="text-yellowColor w-[18px] h-5"/>
+                                    <HiStar className="text-yellowColor w-[18px] h-5"/>
+                                    <HiStar className="text-yellowColor w-[18px] h-5"/>
+                                    <HiStar className="text-yellowColor w-[18px] h-5"/>
+                                </div> 
+                            </div>
+                        </div>
+                        <p className="text-[16px] leading-7 mt-4 text-textColor font-[400]">
+                            "I have taken medical services from them. They treat so well and they 
+                            are providing the best medical services."
+                        </p>
+                    </div>
+                </SwiperSlide> 
+
+                {/*------------------- Review 5 ------------ */}
+                <SwiperSlide>
+                    <div className="py-[30px] px-5 rounded-3">
+                        <div className="flex items-center gap-[13px]">
+                            <img src={patientAvatar} alt="" />
+                            <div> 
+                                <h4 className="text-[18px] leading-[30px] font-semibold text-headingColor"> 
+                                Roman Reigns
+                                </h4>
+                                 <div className="flex items-center gap-[2px]">
+                                    <HiStar className="text-yellowColor w-[18px] h-5"/>
+                                    <HiStar className="text-yellowColor w-[18px] h-5"/>
+                                    <HiStar className="text-yellowColor w-[18px] h-5"/>
+                                    <HiStar className="text-yellowColor w-[18px] h-5"/>
+                                    <HiStar className="text-yellowColor w-[18px] h-5"/>
+                                </div> 
+                            </div>
+                        </div>
+                        <p className="text-[16px] leading-7 mt-4 text-textColor font-[400]">
+                            "I have taken medical services from them. They treat so well and they 
+                            are providing the best medical services."
+                        </p>
+                    </div>
+                </SwiperSlide> 
+
             </Swiper>
          </div>
        

@@ -1,10 +1,14 @@
+// This file is used to design Find A Doctor Page
+
 import DoctorCard from './../../components/Doctors/DoctorCard';
 import { doctors } from './../../assets/data/doctors';
+import Testimonial from '../../components/Testimonial/Testimonial';
 
 
 const Doctors = () => {
   return (
     <>
+    {/* ------------- Search Bar section --------------- */}
     <section className='bg-[#fff9ea]'>
       <div className="container text-center">
         <h2 className="heading">Find a Doctor</h2>
@@ -15,6 +19,7 @@ const Doctors = () => {
       </div>
     </section>
 
+    {/* ---------------- Doctor List Section --------------- */}
     <section>
       <div className="container">
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5'> 
@@ -23,6 +28,20 @@ const Doctors = () => {
     </div>
       </div>
     </section>
+
+    {/* ---------- Testimonial Section ----------*/}
+    <section>
+    <div className="container">
+    <div className="xl:w-[500px] mx-auto">
+        <h2 className='heading text-center'>What our patient say</h2>
+        <p className='text__para text-center'>
+          World-class care for everyone.Our health System offers unmatched, expert health care.
+        </p>
+      </div>
+      <Testimonial/>
+    </div>
+   </section>
+    
     </>
   )
 }
