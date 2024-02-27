@@ -16,7 +16,7 @@ const About = () => {
             </div>
         {/* ====== About Content =======  */}
         <div className='w-full lg:w-1/2 xl:w-[670px] order-1 lg:order-2'>
-            <h2 className='heading'>Proud to be oe of the nations best</h2>
+            <h2 className='heading'>Proud to be one of the nations best</h2>
             <p className='text__para'>
                 For 30 years in a row, U.S. News & world Report has recognized us as one of the best publics hospitals in the Nation and #1 in Texas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sequi.
             </p>

@@ -77,7 +77,8 @@ const Home = () => {
   </section>
 {/* ----------- hero section ends --------- */}
 
-{/* ------------ Medical Services info section starts -------------- */}
+
+{/* ------------ Medical Services info section -------------- */}
   <section>
     <div className='container'>
       <div className='lg:w-[470px] mx-auto'>
@@ -162,12 +163,15 @@ const Home = () => {
       </div>
     </div>
   </section>
+{/* ------------ Medical Services info section ends -------------- */}
 
-{/* ------------ About section starts -------------- */}
+
+{/* ------------ About section -------------- */}
 <About />
 {/* ------------ About section ends -------------- */}
 
-{/*------------- Services section starts-----------*/}
+
+{/*------------- Services section -----------*/}
    <section>
     <div className="container">
       <div className='xl:w-[470px] mx-auto'>
@@ -252,7 +256,7 @@ const Home = () => {
 {/*-------------- our great doctors section ends----------------*/}
 
 
-{/*------------------------ faq section ----------------*/}
+{/*------------------ faq section ----------------*/}
 <section>
   <div className='container'>
     <div className='flex justify-between gap-[50px] lg:gap-0'>
@@ -286,7 +290,7 @@ const Home = () => {
     <Testimonial/>
   </div>
 </section>
-{/*---------------testimonial end---------*/}
+{/*---------------testimonial section end---------*/}
 
 
   </>
