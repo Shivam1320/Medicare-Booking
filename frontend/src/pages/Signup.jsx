@@ -79,8 +79,8 @@ const Signup = () => {
             <div className="mb-5">
               <input 
                 type="password" 
-                placeholder="Enter Password"
-                name="password" 
+                placeholder="Password"
+                name="Password" 
                 value={formData.password}
                 onChange={handleInputChange}  
                 className="w-full pr-4 py-3 border-b border-solid border-[#0066FF61] focus:outline-none
