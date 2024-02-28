@@ -80,7 +80,7 @@ const Signup = () => {
               <input 
                 type="password" 
                 placeholder="Password"
-                name="Password" 
+                name="password" 
                 value={formData.password}
                 onChange={handleInputChange}  
                 className="w-full pr-4 py-3 border-b border-solid border-[#0066FF61] focus:outline-none
