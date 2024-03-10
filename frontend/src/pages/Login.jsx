@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 const Login = () => {
 
-  const[formData,setFormData] =useState({
+  const[formData,setFormData] = useState({
     email:'',
     password:''
   })
@@ -16,36 +16,34 @@ const Login = () => {
     <section className="px-5 lg:px-0">
     <div className="w-full max-w-[570px] mx-auto rounded-lg shadow-md md:p-10">
       <h3 className="text-headingColor text-[22px] leading-9 font-bold mb-10"> 
-        Hello <span className="text-primaryColor"> Welcome </span> Back 
+        Hello! <span className="text-primaryColor"> Welcome </span> Back
       </h3>
 
       <form className="py-4 md:py-0">
         <div className="mb-5">
           <input 
             type="email" 
-            placeholder="Enter Your Email"
+            placeholder="Enter your email"
             name="email" 
-            value={FormData.email} 
+            value={formData.email} 
             onChange={handleInputChange} 
-            className="w-full py-3 border-b border-solid border-[#0066FF61] focus:outline-none
+            className="w-full px-4 py-3 border-b border-solid border-[#0066FF61] focus:outline-none
             focus:border-b-primaryColor text-[16px] leading-7 text-headingColor
             placeholder:text-textColor cursor-pointer"
-            required
-          />
+            required />
         </div>
 
         <div className="mb-5">
           <input 
             type="password" 
-            placeholder="password" 
+            placeholder="Password" 
             name="password"
-            value={FormData.password} 
+            value={formData.password} 
             onChange={handleInputChange} 
             className="w-full px-4 py-3 border-b border-solid border-[#0066FF61] focus:outline-none
             focus:border-b-primaryColor text-[16px] leading-7 text-headingColor
-            placeholder:text-textColor rounded-md cursor-pointer"
-            required
-          />
+            placeholder:text-textColor cursor-pointer"
+            required />
         </div>
 
         <div className="mt-7">
