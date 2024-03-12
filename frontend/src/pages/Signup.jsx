@@ -1,13 +1,14 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import SignupImg from '../assets/images/signup.png';
 import avatar from '../assets/images/doctor-img01.png';
 import { Link } from 'react-router-dom';
 
 const Signup = () => {
 
-  const [selectedFile,setSelectedFile] =useState(null);
-  const [previewURL,setPreviewURL] =useState("");
-  const[formData,setFormData] =useState({
+  const [selectedFile, setSelectedFile] = useState(null);
+  const [previewURL, setPreviewURL] = useState("");
+
+  const[formData, setFormData] = useState({
     name:'',
     email:'',
     password:'',
@@ -16,7 +17,7 @@ const Signup = () => {
     role:'patient'
   })
 
-  const handleInputChange = e=>{
+  const handleInputChange = e =>{
     setFormData({...formData, [e.target.name]:e.target.value})
   }
 
@@ -27,7 +28,7 @@ const Signup = () => {
     console.log(file);
   };
 
-  const submitHandler =async event=>{
+  const submitHandler = async event =>{
     event.preventDefault()
   }
 
@@ -36,13 +37,13 @@ const Signup = () => {
       <div className='max-w-[1170px] mx-auto'>
         <div className='grid grid-cols-1 lg:grid-cols-2'>
           {/*-------img box-----*/}
-          <div className='hidden lg:block bg-primaryColor rounded-l-lg'>
+          <div className='hidden lg:block rounded-l-lg'>
             <figure className='rounded-l-lg'>
               <img src={SignupImg} alt="" className='w-full rounded-l-lg' />
             </figure>
           </div>
 
-          {/*---------------sign up form--------------*/}
+          {/*---------------Signup Form--------------*/}
           <div className='rounded-l-lg lg:pl-16 py-10'>
             <h3 className='text-headingColor text-[22px] leading-9 font-bold mb-10'> 
               Create an <span className='text-primaryColor'> Account
@@ -53,7 +54,7 @@ const Signup = () => {
             <div className="mb-5">
               <input 
                 type="text" 
-                placeholder="Full Name"
+                placeholder="Enter your full name"
                 name="name" 
                 value={formData.name}
                 onChange={handleInputChange} 
@@ -81,7 +82,7 @@ const Signup = () => {
             <div className="mb-5">
               <input 
                 type="password" 
-                placeholder="Password"
+                placeholder="Enter password"
                 name="password" 
                 value={formData.password}
                 onChange={handleInputChange}  
@@ -93,29 +94,29 @@ const Signup = () => {
             </div>
 
             <div className='mb-5 flex items-center justify-between'>
-              <label htmlFor="" className='text-textColor font-semibold text-[15px] leading-7 px-4'>
+              <label htmlFor="" className='text-textColor font-bold text-[16px] leading-7'>
                 Are you a: 
                 <select 
                   name="role" 
                   value={formData.role}
                   onChange={handleInputChange} 
                 className='text-textColor font-semibold text-[15px] leading-7 px-4
-                py-3 focus:outline:none'>
-                  <option value="patient"> Patient </option>
+                py-3 focus:outline-none'>
+                  <option value="patient">Patient</option>
                   <option value="doctor">Doctor</option>
                 </select>
               </label>
 
-              <label className='text-textColor font-semibold text-[15px] leading-7 px-4'>
-                Are you a: 
+              <label className='text-textColor font-bold text-[16px] leading-7'>
+                Gender: 
                 <select 
                   name="gender" 
                   value={formData.gender}
                   onChange={handleInputChange} 
                   className='text-textColor font-semibold text-[15px] leading-7 px-4
-                  py-3 focus:outline:none'
+                  py-3 focus:outline-none'
                 >
-                  <option value=""> Select </option>
+                  <option value="">Select</option>
                   <option value="male">Male</option>
                   <option value="female"> Female </option>
                   <option value="others"> Others </option>
@@ -135,7 +136,7 @@ const Signup = () => {
                   name="photo"
                   id="customFile"
                   onChange={handleFileInputChange}
-                  accept=".jpg,.png"
+                  accept=".jpg, .png, .jpeg"
                   className='absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer'
                 />
 
