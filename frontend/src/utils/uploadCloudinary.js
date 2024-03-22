@@ -21,4 +21,4 @@ const uploadImageToCloudinary =async file =>{
     return data;
 }
 
-export default uploadImageToCloudinary
+export default uploadImageToCloudinary;
