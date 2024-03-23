@@ -1,4 +1,4 @@
-import BookingSchema from "../models/BookingSchema.js";
+import Booking from "../models/BookingSchema.js";
 import Doctor from "../models/DoctorSchema.js";
 
 // Function for Update Doctor
@@ -87,7 +87,7 @@ export const getAllDoctor = async(req, res)=> {
 
 
 export const getDoctorProfile = async(req,res)=>{
-    const doctorId =req.userId
+    const doctorId =req.userId  //chnge to doctorID
 
     try {
         const doctor =await Doctor.findById(doctorId)
@@ -105,7 +105,8 @@ export const getDoctorProfile = async(req,res)=>{
             success:true, 
             message:'profile info is getting',
             data: {...rest,appointments}})
-    } catch (error) {
+
+    } catch (err) {
         res
         .status(500)
         .json({success:false, message: "Something went wrong,cannot get"})
