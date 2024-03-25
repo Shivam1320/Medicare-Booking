@@ -241,6 +241,14 @@ const Profile = ({doctorData}) => {
                                 <option value="surgeon">Surgeon</option>
                                 <option value="neurologist">Neurologist</option>
                                 <option value="dermatologist">Dermatologist</option>
+                                <option value="gynecologist">Gynecologist</option>
+                                <option value="psychiatrist">Psychiatrist</option>
+                                <option value="physician">Physician</option>
+                                <option value="dentist">Dentist</option>
+                                <option value="nephrologist">Nephrologist</option>
+                                <option value="cardiologist">Cardiologist</option>
+                                <option value="hematologist">Hematologist</option>
+                                <option value="pediatrics">Pediatrics</option>
                             </select>
                     </div>
                     {/*--------- This is for the Ticket Price Input ----------- */}
