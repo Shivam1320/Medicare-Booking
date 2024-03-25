@@ -102,6 +102,7 @@ const Profile = ({user}) => {
                 placeholder:text-textColor cursor-pointer"
                 aria-readonly
                 readOnly
+                disabled = "true"
               />
             </div>
 
