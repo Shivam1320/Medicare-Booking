@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/logo2.png';
 import {AiFillYoutube, AiFillGithub, AiFillInstagram, AiFillLinkedin} from 'react-icons/ai';
 
 const socialLinks = [
